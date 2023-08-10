@@ -1,0 +1,76 @@
+/* Global Declaration  */
+:root {
+  /* Primary Colors */
+  --darkBrown: #57093d;
+  --lightBrown: #8a0835;
+  --deepBlue: #2937f0;
+  --lightBlue: #2936f015;
+  --greyFontColor: rgb(128, 128, 128);
+  --greyBorderBox: rgba(128, 128, 128, 0.442);
+  --greyBorder: rgba(128, 128, 128, 0.212);
+  --darkBlack: #000;
+  --pureWhite: #fff;
+  --bgColor: #f6f9fc;
+  --containerPadding: 7rem 9rem;
+
+  /* Neutral Colors  */
+}
+.first-talent {
+  background: none;
+}
+
+.opp-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  justify-content: start;
+  padding: 1rem 9rem;
+}
+
+.opp-cont img {
+  width: 75%;
+}
+
+.opp-top h1 {
+  color: var(--darkBlack);
+  margin-top: 5rem;
+  padding: 1rem 9rem;
+}
+
+.opp-top p {
+  color: var(--darkBlack);
+  /* margin-top: 5rem; */
+}
+
+.opp-cont label {
+  display: block;
+}
+
+form div {
+  margin: 1rem 0;
+}
+
+.opp-form {
+  width: 60%;
+}
+
+.opp-cont input,
+textarea {
+  width: 100%;
+}
+
+.opp-form button {
+  background-color: var(--darkBlack);
+  color: var(--pureWhite);
+  border: 1px solid var(--darkBlack);
+  border-radius: 50px;
+  padding: 0.8rem 1rem;
+}
+
+.opp-form input,
+textarea {
+  outline: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 1px solid var(--greyBorderBox);
+}
