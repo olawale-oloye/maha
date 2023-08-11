@@ -23,8 +23,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
-  justify-content: start;
+  justify-content: center;
   padding: 1rem 9rem;
+}
+
+.oppo-img {
+  height: 60%;
 }
 
 .opp-cont img {
@@ -35,6 +39,12 @@
   color: var(--darkBlack);
   margin-top: 5rem;
   padding: 1rem 9rem;
+  font-size: 3rem;
+}
+
+.opp-top p {
+  color: var(--greyFontColor);
+  font-size: 1.3rem;
 }
 
 .opp-top p {
@@ -73,4 +83,125 @@ textarea {
   padding: 3px 5px;
   border-radius: 5px;
   border: 1px solid var(--greyBorderBox);
+}
+
+footer {
+  margin-top: 16rem;
+}
+
+@media screen and (max-width: 1201px) {
+  .opp-top h1 {
+    padding: 1rem 5rem;
+  }
+  main h1 {
+    margin-bottom: 1rem;
+  }
+
+  main p {
+    margin-bottom: 1rem;
+  }
+
+  .opp-cont {
+    padding: 1rem 5rem;
+  }
+
+  .opp-form {
+    width: 90%;
+  }
+
+  .opp-cont img {
+    width: 85%;
+  }
+
+  footer {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .first-talent {
+    height: 90dvh;
+  }
+  .opp-cont img {
+    width: 100%;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .first-talent {
+    height: 85dvh;
+  }
+
+  .opp-form {
+    text-align: left;
+  }
+
+  .opp-cont {
+    padding: 1rem 4rem;
+  }
+
+  .opp-form {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .first-talent {
+    height: 100dvh;
+  }
+
+  .opp-cont img {
+    padding-right: 0;
+  }
+
+  /* .oppo-img {
+    height: 100%;
+  } */
+
+  .opp-cont {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  footer {
+    margin-top: 35rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .first-talent {
+    height: 95dvh;
+  }
+
+  .opp-cont {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .first-talent {
+    height: 80dvh;
+  }
+
+  .opp-form {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .opp-cont {
+    padding: 1rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .opp-cont img {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
