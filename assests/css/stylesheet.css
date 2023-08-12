@@ -660,6 +660,7 @@ footer i:hover {
   nav {
     padding: 1rem 4rem;
   }
+
   nav .ul-links ul {
     position: fixed;
     flex-direction: column;
@@ -670,7 +671,8 @@ footer i:hover {
     top: -50%;
     left: 0;
     transform: translate(-50% -50%);
-    z-index: 99;
+
+    transition: 0.5s;
   }
   .toggler {
     display: block;
@@ -678,6 +680,11 @@ footer i:hover {
     border: 1px solid var(--greyBorder);
     padding: 0.4rem 0.8rem;
     border-radius: 5px;
+  }
+
+  nav .ul-links.show-nav ul {
+    top: 8%;
+    transition: 0.5s;
   }
 
   main {
